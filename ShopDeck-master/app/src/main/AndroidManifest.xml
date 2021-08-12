@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shopdeck">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopDeck">
+        <activity android:name=".AdminRejectOrder"></activity>
+        <activity android:name=".WProductDetails" />
+        <activity android:name=".WishList" />
+        <activity android:name=".AdminFeedback" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".OrdersProduct" />
+        <activity android:name=".AllOrders" />
+        <activity android:name=".CategoryItems" />
+        <activity android:name=".Category" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".AdminUserProducts" />
+        <activity android:name=".AdminNewOrders" />
+        <activity android:name=".AdminMaintain" />
+        <activity android:name=".ConfirmOrder" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Cart" />
+        <activity android:name=".ProductDetails" />
+        <activity android:name=".Header" />
+        <activity android:name=".Admin_AddProduct" />
+        <activity android:name=".Admin_ProductCategory" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".Nav_Home" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

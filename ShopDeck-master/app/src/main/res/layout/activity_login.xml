@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/login_AppLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/login_Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_AppLogo"
+        android:background="@drawable/input_style"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"
+        android:hint="Phone Number"
+        android:maxLength="10"
+        android:inputType="number"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_Contact"
+        android:background="@drawable/input_style"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"
+        />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/login_Password"
+        android:text="Remember me"
+        android:textColor="@color/blue"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remember_me"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:padding="17dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="17dp"
+        android:text="Admin ?"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="viewEnd"
+        />
+
+    <TextView
+        android:id="@+id/notAdmin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Not Admin"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

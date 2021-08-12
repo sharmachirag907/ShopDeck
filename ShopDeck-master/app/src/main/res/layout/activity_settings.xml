@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/update_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/close_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textSize="17sp"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/enter_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/blue"
+        android:text="Enter Details :"
+        android:layout_marginLeft="50dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <EditText
+        android:id="@+id/setting_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/enter_detail"
+        android:hint="Full Name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="20dp"
+        android:maxLength="25"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:background="@drawable/input_style"/>
+
+    <EditText
+        android:id="@+id/setting_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_Name"
+        android:hint="Old Password"
+        android:maxLength="10"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_style"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/setting_CPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_Password"
+        android:hint="New Password"
+        android:maxLength="10"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_style"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"/>
+
+</RelativeLayout>

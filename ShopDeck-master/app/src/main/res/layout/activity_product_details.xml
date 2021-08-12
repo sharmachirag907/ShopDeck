@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetails">
+
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:layout_marginStart="20dp"
+        android:text="Product Name"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="left"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/product_desc_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details"
+        android:text="Product Description"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:gravity="left"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_desc_details"
+        android:text="Rs."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginStart="110dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/product_price_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_desc_details"
+        android:text="Product Price"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginStart="150dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/product_quantity_details"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price_details"
+        android:hint="Total Qantity"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="120dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/add_cart_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_quantity_details"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:background="@drawable/buttons"
+        android:text="Add to cart"/>
+
+    <Button
+        android:id="@+id/add_wishlist_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_cart_btn"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:background="@drawable/buttons"
+        android:text="Add to wishlist"/>
+</RelativeLayout>
